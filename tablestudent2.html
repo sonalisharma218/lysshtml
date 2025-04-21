@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Batchmates Academic Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightpink;
+      padding: 20px;
+    }
+    table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid lightgray;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: blue;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: white;
+    }
+    h2 {
+      text-align: center;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Batchmates Information</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Name</th>
+        <th rowspan="2">Hometown</th>
+        <th rowspan="2">Contact No</th>
+        <th rowspan="2">Registration No</th>
+        <th colspan="2">CGPA</th>
+      </tr>
+      <tr>
+        <th>Sem 1-4</th>
+        <th>Sem 5-8</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Ravi Kumar</td>
+        <td rowspan="2">Patna</td>
+        <td rowspan="2">9876543210</td>
+        <td rowspan="2">2021CSE101</td>
+        <td>8.1</td>
+        <td>8.4</td>
+      </tr>
+      <tr>
+        <!-- Rowspan cells continue here (no need to repeat) -->
+        <td colspan="2">Final CGPA: 8.25</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">Anjali Sharma</td>
+        <td rowspan="2">Muzaffarpur</td>
+        <td rowspan="2">9123456780</td>
+        <td rowspan="2">2021CSE102</td>
+        <td>8.3</td>
+        <td>8.6</td>
+      </tr>
+      <tr>
+        <td colspan="2">Final CGPA: 8.45</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">Aman Raj</td>
+        <td rowspan="2">Hajipur</td>
+        <td rowspan="2">8765432109</td>
+        <td rowspan="2">2021CSE103</td>
+        <td>7.9</td>
+        <td>8.1</td>
+      </tr>
+      <tr>
+        <td colspan="2">Final CGPA: 8.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
