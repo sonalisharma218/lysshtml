@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarkari Result Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: red;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    nav {
+      background-color: black;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .main {
+      flex: 3;
+      padding: 10px;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .box {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .box h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: red;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav a {
+        display: block;
+        border-bottom: 1px solid #444;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SARKARIRESULT.COM</h1>
+    <p>Welcome to the No.1 Job Portal of India</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Latest Jobs</a>
+    <a href="#">Admit Card</a>
+    <a href="#">Results</a>
+    <a href="#">Answer Key</a>
+    <a href="#">Syllabus</a>
+    <a href="#">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <div class="main">
+      <div class="box">
+        <h2>Latest Job Updates</h2>
+        <ul>
+          <li>SSC CHSL 2025 Apply Online</li>
+          <li>UP Police Constable Vacancy 2025</li>
+          <li>Railway Group D Admit Card</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Admit Cards</h2>
+        <ul>
+          <li>CTET July 2025 Admit Card</li>
+          <li>UPSC NDA I Admit Card</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="box">
+        <h2>Quick Links</h2>
+        <ul>
+          <li>Online Form</li>
+          <li>Admit Card</li>
+          <li>Results</li>
+          <li>Answer Keys</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 SarkariResult Clone | Designed for Educational Purpose
+  </footer>
+
+</body>
+</html>
