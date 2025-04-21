@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Information Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: olive;
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+    }
+
+    form {
+      width: 60%;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid gray;
+      border-radius: 4px;
+    }
+
+    .gender, .education {
+      margin-top: 5px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn {
+      background-color: lime green;
+      color: white;
+    }
+
+    .reset-btn {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Basic Information Form</h2>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="mobile">Mobile No:</label>
+    <input type="tel" id="mobile" name="mobile" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Gender:</label>
+    <div class="gender">
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="Other">
+      <label for="other">Other</label>
+    </div>
+
+    <label>Education Done:</label>
+    <div class="education">
+      <input type="checkbox" id="ssc" name="education" value="SSC">
+      <label for="ssc">SSC</label>
+
+      <input type="checkbox" id="hsc" name="education" value="HSC">
+      <label for="hsc">HSC</label>
+
+      <input type="checkbox" id="grad" name="education" value="Graduation">
+      <label for="grad">Graduation</label>
+
+      <input type="checkbox" id="pg" name="education" value="Post-Graduation">
+      <label for="pg">Post-Graduation</label>
+    </div>
+
+    <label for="tea">Do you like tea?</label>
+    <select id="tea" name="tea">
+      <option value="">--Select--</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      <option value="Sometimes">Sometimes</option>
+    </select>
+
+    <div class="buttons">
+      <button type="submit" class="submit-btn">Submit</button>
+      <button type="reset" class="reset-btn">Reset</button>
+    </div>
+  </form>
+
+</body>
+</html>
